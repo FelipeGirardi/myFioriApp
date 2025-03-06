@@ -1,0 +1,82 @@
+{
+    "sap.app": {
+        "id": "myFioriApp",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "sourceTemplate": {
+            "id": "@sap/ux-app-migrator:freestyle",
+            "version": "1.16.5",
+            "toolsId": "0ea7041c-6b32-40a7-9773-7a1ce73ceb0d"
+        }
+    },
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "myFioriApp.view.List",
+            "type": "XML",
+            "async": true,
+            "id": "listView"
+        },
+        "dependencies": {
+            "minUI5Version": "1.60.0",
+            "libs": {
+                "sap.m": {}
+            }
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "myFioriApp.i18n.i18n"
+                }
+            },
+            "storageModel": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/data.json"
+            }
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "myFioriApp.view",
+                "controlId": "app",
+                "controlAggregation": "pages",
+                "async": true
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "list",
+                    "target": "list"
+                },
+                {
+                    "pattern": "detail/{id}",
+                    "name": "detail",
+                    "target": "detail"
+                },
+                {
+                    "pattern": "create",
+                    "name": "create",
+                    "target": "create"
+                }
+            ],
+            "targets": {
+                "list": {
+                    "viewName": "List",
+                    "viewLevel": 1
+                },
+                "detail": {
+                    "viewName": "Detail",
+                    "viewLevel": 2
+                },
+                "create": {
+                    "viewName": "Create",
+                    "viewLevel": 2
+                }
+            }
+        }
+    }
+}

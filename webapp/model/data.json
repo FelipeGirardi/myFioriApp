@@ -1,0 +1,16 @@
+{
+  "storageOrders": [
+    {
+      "id": "1",
+      "description": "Lagerauftrag 1",
+      "quantity": 100,
+      "status": "Neu"
+    },
+    {
+      "id": "2",
+      "description": "Lagerauftrag 2",
+      "quantity": 200,
+      "status": "In Bearbeitung"
+    }
+  ]
+}

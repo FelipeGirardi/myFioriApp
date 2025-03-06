@@ -1,0 +1,14 @@
+<mvc:View
+  controllerName="myFioriApp.controller.Detail"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Page
+    title="Detailansicht"
+    showNavButton="true"
+    navButtonPress="onNavBack">
+    <ObjectHeader
+      title="{storageModel>description}"
+      number="Menge: {storageModel>quantity}"
+      numberUnit="Status: {storageModel>status}"/>
+  </Page>
+</mvc:View>

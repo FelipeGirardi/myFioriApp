@@ -1,0 +1,26 @@
+<mvc:View
+  controllerName="myFioriApp.controller.List"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Page title="Lageraufträge">
+    <List
+      id="storageOrderList"
+      items="{
+        path: 'storageModel>/storageOrders'
+      }">
+      <StandardListItem
+        title="{storageModel>description}"
+        description="Menge: {storageModel>quantity}, Status: {storageModel>status}"
+        type="Navigation"
+        press="onItemPress"/>
+    </List>
+    <footer>
+      <Toolbar>
+        <ToolbarSpacer/>
+        <Button
+          text="Neuer Auftrag"
+          press="onCreatePress"/>
+      </Toolbar>
+    </footer>
+  </Page>
+</mvc:View>

@@ -1,0 +1,21 @@
+<mvc:View
+  controllerName="myFioriApp.controller.Create"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Page
+    title="Neuer Lagerauftrag"
+    showNavButton="true"
+    navButtonPress="onNavBack">
+    <VBox class="sapUiSmallMargin">
+      <Label text="Beschreibung" labelFor="descriptionInput"/>
+      <Input id="descriptionInput"/>
+      <Label text="Menge" labelFor="quantityInput"/>
+      <Input id="quantityInput" type="Number"/>
+      <Label text="Status" labelFor="statusInput"/>
+      <Input id="statusInput"/>
+      <Button
+        text="Speichern"
+        press="onSavePress"/>
+    </VBox>
+  </Page>
+</mvc:View>
