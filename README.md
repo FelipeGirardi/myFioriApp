@@ -4,7 +4,7 @@ Documentation:
 Architecture:
 
 /myFioriApp\
-<br /> index.html\
+&nbsp; index.html\
   /webapp\
     Component.js\
     manifest.json\
