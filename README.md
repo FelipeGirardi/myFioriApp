@@ -32,4 +32,4 @@ Used technologies: JavaScript, HTML, XML, SAP Fiori Tools - Application Modeler 
 
 --------------------------------
 
-To execute: npm start in myFioriApp folder
+To execute: in the terminal write "npm start" in myFioriApp folder and execute
