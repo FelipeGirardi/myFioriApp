@@ -3,21 +3,21 @@ Documentation:
 
 Architecture:
 
-/myFioriApp
-  index.html
-  /webapp
-    Component.js
-    manifest.json
-    /controller
-      List.controller.js
-      Detail.controller.js
-      Create.controller.js
-    /view
-      List.view.xml
-      Detail.view.xml
-      Create.view.xml
-    /model
-      models.js
+/myFioriApp\
+  index.html\
+  /webapp\
+    Component.js\
+    manifest.json\
+    /controller\
+      List.controller.js\
+      Detail.controller.js\
+      Create.controller.js\
+    /view\
+      List.view.xml\
+      Detail.view.xml\
+      Create.view.xml\
+    /model\
+      models.js\
 
 Model for storage orders:
   - id
@@ -27,7 +27,7 @@ Model for storage orders:
 
 --------------------------------
 
-Used technologies: JavaScript, SAP Fiori Tools - Application Modeler extension for VS Code
+Used technologies: JavaScript, HTML, XML, SAP Fiori Tools - Application Modeler extension for VS Code
 
 --------------------------------
 
