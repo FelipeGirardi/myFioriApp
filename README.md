@@ -4,7 +4,7 @@ Documentation:
 Architecture:
 
 /myFioriApp\
-  index.html\
+<br /> index.html\
   /webapp\
     Component.js\
     manifest.json\
@@ -17,7 +17,7 @@ Architecture:
       Detail.view.xml\
       Create.view.xml\
     /model\
-      models.js\
+      models.js
 
 Model for storage orders:
   - id
