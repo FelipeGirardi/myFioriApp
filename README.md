@@ -17,7 +17,8 @@ Architecture:
 &nbsp; &nbsp; &nbsp; Detail.view.xml\
 &nbsp; &nbsp; &nbsp; Create.view.xml\
 &nbsp; &nbsp; /model\
-&nbsp; &nbsp; &nbsp; models.js
+&nbsp; &nbsp; &nbsp; models.js\
+&nbsp; &nbsp; &nbsp; data.json
 
 Model for storage orders:
   - id
