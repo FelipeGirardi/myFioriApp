@@ -5,19 +5,19 @@ Architecture:
 
 /myFioriApp\
 &nbsp; index.html\
-  /webapp\
-    Component.js\
-    manifest.json\
-    /controller\
-      List.controller.js\
-      Detail.controller.js\
-      Create.controller.js\
-    /view\
-      List.view.xml\
-      Detail.view.xml\
-      Create.view.xml\
-    /model\
-      models.js
+&nbsp; /webapp\
+&nbsp; &nbsp; Component.js\
+&nbsp; &nbsp; manifest.json\
+&nbsp; &nbsp; /controller\
+&nbsp; &nbsp; &nbsp; List.controller.js\
+&nbsp; &nbsp; &nbsp; Detail.controller.js\
+&nbsp; &nbsp; &nbsp; Create.controller.js\
+&nbsp; &nbsp; /view\
+&nbsp; &nbsp; &nbsp; List.view.xml\
+&nbsp; &nbsp; &nbsp; Detail.view.xml\
+&nbsp; &nbsp; &nbsp; Create.view.xml\
+&nbsp; &nbsp; /model\
+&nbsp; &nbsp; &nbsp; models.js
 
 Model for storage orders:
   - id
