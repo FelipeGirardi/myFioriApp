@@ -1,23 +1,25 @@
+// Detail controller
+
 sap.ui.define([
   "sap/ui/core/mvc/Controller",
   "sap/ui/core/routing/History"
-], function(Controller, History) {
+], function (Controller, History) {
   "use strict";
 
   return Controller.extend("myFioriApp.controller.Detail", {
-    onInit: function() {
+    onInit: function () {
       var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
       oRouter.getRoute("detail").attachPatternMatched(this._onObjectMatched, this);
     },
 
-    _onObjectMatched: function(oEvent) {
+    _onObjectMatched: function (oEvent) {
       this.getView().bindElement({
         path: "/storageOrders/" + oEvent.getParameter("arguments").id,
         model: "storageModel"
       });
     },
 
-    onNavBack: function() {
+    onNavBack: function () {
       var oHistory = History.getInstance();
       var sPreviousHash = oHistory.getPreviousHash();
 

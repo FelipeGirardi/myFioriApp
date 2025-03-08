@@ -1,3 +1,5 @@
+<!--Create view-->
+
 <mvc:View
   controllerName="myFioriApp.controller.Create"
   xmlns:mvc="sap.ui.core.mvc"
